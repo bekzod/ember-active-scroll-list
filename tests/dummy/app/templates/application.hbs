@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div class="center">
+  {{#active-scroll-list activeIndex=activeIndex class='list'}}
+    {{#each items as |item index|}}
+      <div onclick={{action (mut activeIndex) index}} class="item {{if (eq index activeIndex) 'active'}}">{{item}}</div>
+    {{/each}}
+  {{/active-scroll-list}}
+</div>
