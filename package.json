@@ -1,6 +1,6 @@
 {
   "name": "ember-active-scroll-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ember Addon helps to keep active element visible in overflowed list.",
   "directories": {
     "doc": "doc",
