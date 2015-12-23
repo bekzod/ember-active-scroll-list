@@ -23,13 +23,13 @@ export default Ember.Component.extend(ActiveScrollListMixin, {
 ```
 
 ##Options
-  * activeIndex
+  * `activeIndex`
   Index of element which needs to be visible on the list
 
-  * tolerance
+  * `tolerance`
     How much `top` and `bottom` edges should be offset when determining overflow
 
-  * scrollTimeout
+  * `scrollTimeout`
     Timeout for when autoscroll is activated
 
 ## Installation
