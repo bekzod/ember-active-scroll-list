@@ -1,26 +1,40 @@
-# Ember-active-scroll
+# ember-active-scroll-list
+Ember Addon helps to keep active element visible in overflowed list. 
 
-This README outlines the details of collaborating on this Ember addon.
+###[Demo](http://ember-active-scroll-list.surge.sh)
+
+## Usage
+
+```hbs
+{{#active-scroll-list tolerance=0 scrollTimeout=2000 activeIndex=activeIndex class='list'}}
+  {{#each items as |item index|}}
+    <div class="item {{if (eq index activeIndex) 'active'}}">{{item}}</div>
+  {{/each}}
+{{/active-scroll-list}}
+```
+can be also be extended as mixin
+```javascript 
+import Ember from 'ember';
+import ActiveScrollListMixin from 'ember-active-scroll-list';
+
+export default Ember.Component.extend(ActiveScrollListMixin, {
+  ...
+});
+```
+
+##Options
+  * activeIndex
+  Index of element which needs to be visible on the list
+
+  * tolerance
+    How much `top` and `bottom` edges should be offset when determining overflow
+
+  * scrollTimeout
+    Timeout for when autoscroll is activated
 
 ## Installation
+You can install either with `ember install`:
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```shell
+  ember install ember-active-scroll-list
+```

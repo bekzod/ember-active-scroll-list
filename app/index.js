@@ -1,1 +1,1 @@
-export { default } from 'ember-active-scroll/components/active-scroll';
+export { default } from 'ember-active-scroll/mixins/active-scroll-list';
