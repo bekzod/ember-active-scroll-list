@@ -44,7 +44,7 @@
     "ember-truth-helpers": "^1.2.0"
   },
   "ember-addon": {
-    "demoUrl": "ember-active-scroll-list.surge.sh",
+    "demoUrl": "http://ember-active-scroll-list.surge.sh",
     "configPath": "tests/dummy/config"
   }
 }
