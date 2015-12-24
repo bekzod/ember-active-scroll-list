@@ -13,7 +13,7 @@ export default Ember.Mixin.create({
 
   correctTopScroll() {
     let activeIndex = get(this, 'activeIndex');
-    if (typeof activeIndex === 'number' && activeIndex > -1) { return; }
+    if (typeof activeIndex !== 'number' || activeIndex === -1) { return; }
     run.schedule('afterRender', this, function() {
       let containerEl = this.$();
       let activeEl = containerEl.children().eq(activeIndex);
