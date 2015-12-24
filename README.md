@@ -1,5 +1,5 @@
 # ember-active-scroll-list
-Ember Addon helps to keep active element visible in overflowed list. 
+Ember Addon helps to keep active item of list visible in viewport
 
 ###[Demo](http://ember-active-scroll-list.surge.sh)
 

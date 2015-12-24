@@ -1,5 +1,5 @@
 <div class="center">
-  {{#active-scroll-list activeIndex=activeIndex class='list'}}
+  {{#active-scroll-list scrollTimeout=1000 activeIndex=activeIndex class='list'}}
     {{#each items as |item index|}}
       <div onclick={{action (mut activeIndex) index}} class="item {{if (eq index activeIndex) 'active'}}">{{item}}</div>
     {{/each}}
