@@ -1,7 +1,7 @@
 # ember-active-scroll-list
 Ember Addon helps to keep active item of list visible in viewport
 
-[DEMO](http://ember-active-scroll-list.surge.sh)
+### [DEMO](http://ember-active-scroll-list.surge.sh)
 
 ## Usage
 
@@ -22,7 +22,7 @@ export default Ember.Component.extend(ActiveScrollListMixin, {
 });
 ```
 
-##Options
+## Options
   * `activeIndex`
   Index of element which needs to be visible on the list
 
