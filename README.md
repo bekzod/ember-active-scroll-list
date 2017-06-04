@@ -1,4 +1,6 @@
 # ember-active-scroll-list
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/bekzod/ember-active-scroll-list.svg)](https://greenkeeper.io/)
 Ember Addon helps to keep active item of list visible in viewport
 
 ### [DEMO](http://ember-active-scroll-list.surge.sh)
